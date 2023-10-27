@@ -22,7 +22,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background-color:#cc6f32;">
         <div class="container px-5">
-            <a class="navbar-brand" href="#page-top">Start Boot</a>
+            <a class="navbar-brand" href="#page-top">pLibrary</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
@@ -33,13 +33,24 @@
         </div>
     </nav>
     <!-- Content section 1-->
-    <div class="container">
-        <h1 class="mt-5 text-center" style="font-family: 'Times New Roman', Times, serif;">New York Times Book List</h1>
-        <p class="text-center">Seleccione el género: </p>
-        <select name="genre" id="genre">
-            <option value=""></option>
+    <div class="container" style="display: flex; align-items: center; justify-content: center; margin-bottom: 2%; margin-top: 2%;">
+        <h3 class="text-center">Seleccionar género: </h3>
+        <select id="genre" style="border-radius: 25px; padding: 10px; margin-left: 10px; ">
+            <option id="hardcover-fiction" value="hardcover-fiction">Hardcover Fiction</option>
+            <option id="hardcover-nonfiction" value="hardcover-nonfiction">Hardcover Nonfiction</option>
+            <option id="trade-fiction-paperback" value="trade-fiction-paperback">Paperback Trade Fiction</option>
+            <option id="mass-market-paperback" value="mass-market-paperback">Paperback Mass-Market Fiction</option>
+            <option id="paperback-nonfiction" value="paperback-nonfiction">Paperback Nonfiction</option>
+            <option id="young-adult" value="young-adult">Young Adult</option>
+            <option id="picture-books" value="picture-books">Picture Books</option>
+            <option id="advice-how-to-and-miscellaneous" value="advice-how-to-and-miscellaneous">Advice, How-To, and Miscellaneous</option>
+            <option id="science" value="science">Science</option>
+            <option id="travel" value="travel">Travel</option>
         </select>
-        <h2 class="text-center" id="genero"></h2>
+    </div>
+
+    <div class="container">
+        <h1 class="text-center" id="genero"></h1>
         <div id="bookList" class="row mt-4"></div>
     </div>
 

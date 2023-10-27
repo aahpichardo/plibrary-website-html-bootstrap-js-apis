@@ -38,9 +38,9 @@ function Show(listName) {
 
                 bookDiv.innerHTML = `
                     <img src="${book.book_image}" class="card-img-top" alt="${book.title}">
-                    <div class="card-body">
+                    <div class="card-body text-dark">
                         <h5 class="card-title">${book.title}</h5>
-                        <p class="card-text"><strong>Author(s):</strong> ${book.author}</p>
+                        <p class="card-text"><strong>Autore:</strong> ${book.author}</p>
                     </div>
                 `;
 

@@ -41,8 +41,6 @@ function Show(listName) {
                     <div class="card-body">
                         <h5 class="card-title">${book.title}</h5>
                         <p class="card-text"><strong>Author(s):</strong> ${book.author}</p>
-                        <p class="card-text"><strong>Description:</strong> ${book.description}</p>
-                        <p class="card-text"><strong>ISBN:</strong> ${book.primary_isbn10}</p>
                     </div>
                 `;
 

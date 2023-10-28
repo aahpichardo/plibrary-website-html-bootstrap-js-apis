@@ -15,25 +15,38 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
         rel="stylesheet" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--toastifyjs cdn-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!--main JS-->
+    <script src="./main.js" type="module"></script>
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-        <div class="container px-5">
-            <a class="navbar-brand" href="#page-top">pLibrary</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Log In</a></li>
-                </ul>
+        <div class="container">
+            <a class="navbar-brand" href="#">pLibrary</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signinModal">Iniciar Sesión</a> <!--Se agrega desde el data-bs-toggle para agregar el modal-->
+                </li>
+                <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Registrarme</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link logged-in" href="#" id="logout">Cerrar Sesión</a> <!--Clase loggedin para que salga solo cuando estamos logueados-->
+                </li>
+              </ul>
             </div>
-        </div>
+          </div>
     </nav>
     <!-- Header-->
     <header class="masthead text-center text-white" style="background-image: url('assets/img/fondo.jpg');">
@@ -59,8 +72,61 @@
                 Brandon Chacon, Gael Flores, Javier Solis, Esau Melendez, Alan Linares</p>
         </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--MODALES-->
+
+    <!-- Login Modal (ventana emergente para que salga el inicio de sesión) -->
+    <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="login-form" action="">
+                <label for="email">Email</label>
+                <input type="text" id="login-email" class="form-control mb-3" placeholder="Email" required>
+                <label for="email">Password</label>
+                <input type="password" id="login-password" class="form-control mb-3" placeholder="**********" required>
+                <button type="submit" class="btn btn-primary">
+                    Login
+                  </button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Signup Modal (ventana emergente para que salga el registro) -->
+      <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Signup</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="signup-form" action="">
+            <!--<label for="name">Nombre</label>
+            <input type="text" id="signup-name" class="form-control mb-3" placeholder="Nombre" required>-->
+            <label for="email">Email</label>
+            <input type="text" id="signup-email" class="form-control mb-3" placeholder="Email" required>
+            <label for="email">Password</label>
+            <input type="password" id="signup-password" class="form-control mb-3" placeholder="**********" required>
+            <button type="submit" class="btn btn-primary">
+                Register
+              </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--Bootstrap-->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Toastify-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>

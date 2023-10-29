@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Libros</title>
+    <title>Perfil</title>
     <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -20,7 +20,8 @@
   position: absolute;
   width: 828px;
   height: 600px;
-  left: 350px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 120px;
 
   background: #CC6F32;
@@ -31,7 +32,8 @@
   position: absolute;
   width: 337px;
   height: 337px;
-  left: 250px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 40px;
   border-radius: 50%; 
 
@@ -42,44 +44,83 @@
   position: absolute;
   width: 297.82px;
   height: 300px;
-  left: 268px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 60px;
 
   background: url(assets/img/imagen-perfil.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
 }
 
 .busqueda {
-  position: absolute;
+  position: relative;
   width: 479px;
-  height: 71px;
-  left: 190px;
+  height: 60px;
+  margin: 0 auto;
   top: 400px;
+  font-family: 'Crimson Pro';
 
   background: #D9D9D9;
   border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
 }
 
-.busquedaDos {
+.busqueda:focus {
+  background: #cc6f32;
+}
+
+.botonBusqueda {
   position: absolute;
   width: 226px;
-  height: 64px;
-  left: 320px;
+  height: 60px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 490px;
+  font-family: 'Crimson Pro';
 
   background: #D9D9D9;
+  border: none; 
   border-radius: 10px;
+  color: #333; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.botonBusqueda:hover {
+  background: #cc6f32; 
+  color: #FFF;
 }
 
 .salir {
   position: absolute;
-  width: 226px;
-  height: 64px;
-  left: 320px;
+  width: 125px;
+  height: 35px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 580px;
+  font-family: 'Crimson Pro';
 
-  background: #C89D65;
+  background: #D9D9D9;
+  border: none; 
   border-radius: 10px;
+  color: #333; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.salir:hover {
+  background: #cc6f32; 
+  color: #FFF;
 }
 
 .imagenCuadro {
@@ -107,7 +148,7 @@
   position: absolute;
   width: 230px;
   height: 550px;
-  left: 1240px;
+  left: 1225px;
   top: 120px;
 
   background: #CC6F32;
@@ -143,7 +184,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
-  line-height: 44px;
+  line-height: 30px;
 
   color: #FFFFFF;
 }
@@ -157,13 +198,148 @@
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
-  line-height: 44px;
+  line-height: 30px;
 
   color: #FFFFFF;
 }
+
+.imagenLibroUno {
+  position: absolute;
+  width: 102px;
+  height: 169px;
+  left: 66px;
+  top: 107px;
+
+  background: url(assets/img/portada-libro1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imagenLibroDos {
+  position: absolute;
+  width: 102px;
+  height: 169px;
+  left: 66px;
+  top: 320px;
+
+  background: url(assets/img/portada-libro2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.botonConsultar {
+  position: absolute;
+  width: 102px;
+  height: 35px;
+  left: 66px;
+  top: 273px;
+  background: #D9D9D9;
+  border-radius: 0px 0px 10px 10px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center; 
+  line-height: 35px;
+  transition: background-color 0.3s; 
+}
+
+.botonConsultar:hover {
+  background: #BFBFBF;
+  color: #000;
+}
+
+.botonConsultar2 {
+  position: absolute;
+  width: 102px;
+  height: 35px;
+  left: 66px;
+  top: 485px;
+  background: #D9D9D9;
+  border-radius: 0px 0px 10px 10px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center; 
+  line-height: 35px;
+  transition: background-color 0.3s; 
+}
+
+.botonConsultar2:hover {
+  background: #BFBFBF;
+  color: #000;
+}
+
+.imagenLibroTres {
+  position: absolute;
+  width: 102px;
+  height: 169px;
+  left: 66px;
+  top: 107px;
+
+  background: url(assets/img/portada-libro3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imagenLibroCuatro {
+  position: absolute;
+  width: 102px;
+  height: 169px;
+  left: 66px;
+  top: 320px;
+
+  background: url(assets/img/portada-libro4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.botonConsultar3 {
+  position: absolute;
+  width: 102px;
+  height: 35px;
+  left: 66px;
+  top: 273px;
+  background: #D9D9D9;
+  border-radius: 0px 0px 10px 10px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center; 
+  line-height: 35px;
+  transition: background-color 0.3s; 
+}
+
+.botonConsultar3:hover {
+  background: #BFBFBF;
+  color: #000;
+}
+
+.botonConsultar4 {
+  position: absolute;
+  width: 102px;
+  height: 35px;
+  left: 66px;
+  top: 485px;
+  background: #D9D9D9;
+  border-radius: 0px 0px 10px 10px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center; 
+  line-height: 35px;
+  transition: background-color 0.3s; 
+}
+
+.botonConsultar4:hover {
+  background: #BFBFBF;
+  color: #000;
+}
 </style>
 <body id="page-top" style="background-color: #413128; color: aliceblue; text-align: center;">
-
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background-color:#cc6f32;">
         <div class="container px-5">
@@ -179,25 +355,31 @@
     </nav>
     <!-- Content section 1-->
     <div class="cuadro">
-        <img src="assets/img/imagen-libros1.png" alt="imagen de fondo" class="imagenCuadro">
+        <img src="assets/img/imagen-libros1.jpg" alt="imagen de fondo" class="imagenCuadro">
         <div class="circulo"></div>
         <div class="imagenPerfil"></div>
         <input type="text" class="busqueda" placeholder="Nombre...">
-        <input type="text" class="busquedaDos" placeholder="Buscar">
+        <button class="botonBusqueda">Buscar</button>
         <button class="salir">Salir</button>
     </div>
     
-
     <div class="cuadroDos">
         <img src="assets/img/imagen-libros2.png" alt="imagen de fondo" class="imagenCuadroDos">
         <p class="tituloCuadroDos">Libros recomendados.</p>
+        <button class="botonConsultar">Consultar</button>
+        <button class="botonConsultar2">Consultar</button>
+        <div class="imagenLibroUno"></div>
+        <div class="imagenLibroDos"></div>
     </div>
     
     <div class="cuadroTres">
         <img src="assets/img/imagen-libros3.png" alt="imagen de fondo" class="imagenCuadroTres">
-        <p class="tituloCuadroDos">Comprados recientemente.</p>
+        <p class="tituloCuadroTres">Comprados recientemente.</p>
+        <button class="botonConsultar3">Consultar</button>
+        <button class="botonConsultar4">Consultar</button>
+        <div class="imagenLibroTres"></div>
+        <div class="imagenLibroCuatro"></div>
     </div>
-    
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

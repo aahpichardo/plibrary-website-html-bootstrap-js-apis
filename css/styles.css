@@ -10918,3 +10918,108 @@ header.masthead .bg-circle-4 {
     font-size: 4rem;
   }
 }
+
+
+/*! PARTE DE TODA LA SECCION 3 DE HOME.HTML*/
+.section3 {
+  background-color: #fdeebb;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.title-three{
+  color: black;
+  margin-top: 20px;
+  font-size: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.text-three{
+  color: black;
+  font-size: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.subtitulo-three{
+  color: black;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 40px;
+  text-align: left;
+  border-bottom: 3px solid #ff6a0089;
+}
+
+/*! PARTE DE LA TARJETA DEL EMAIL DE HOME.HTML*/
+.tarjeta {
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+.tarjeta label {
+  display: block;
+  font-family: 'Impact', sans-serif;
+  margin-top: -13px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.labels{
+  color: #ff6a0089;
+  text-align: left;
+}
+
+
+.tarjeta input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #413128;
+}
+
+.tarjeta input[type="text"][name="message"] {
+  height: 150px;
+}
+
+.tarjeta input[type="submit"] {
+  background-color: #ff6a0089;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.tarjeta input[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* PARTE DEL MAPA DE LA SECCION 3 DE HOME.HTML*/
+.bg-white{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.bg-white-2 {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 3px solid #ff6a0089;
+  margin-bottom: 40px;
+}
+
+.ubication-1, .ubication-2, .ubication-3, .ubication-4 {
+  flex: 1;
+}
+
+.text-ubication{
+  color: #000;
+}

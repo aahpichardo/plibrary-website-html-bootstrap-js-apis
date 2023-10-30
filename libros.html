@@ -17,20 +17,33 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body id="page-top" style="background-color: #413128; color: aliceblue; text-align: center;">
+<body id="page-top" style="background-color: #413128; color: aliceblue; text-align: center;" id="Catalogo">
 
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background-color:#cc6f32;">
-        <div class="container px-5">
-            <a class="navbar-brand" href="#page-top">pLibrary</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Log In</a></li>
-                </ul>
+     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="background-color: #CC6F32;">
+        <div class="container">
+            <a class="navbar-brand" href="#">pLibrary</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signinModal" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white;">Iniciar Sesión</a> <!--Se agrega desde el data-bs-toggle para agregar el modal-->
+                </li>
+                <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white" >Registrarme</a>
+                </li>
+                <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
+                  <a class="nav-link" href="#Contacto" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white" >Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link logged-in" href="#" id="logout">Cerrar Sesión</a> <!--Clase loggedin para que salga solo cuando estamos logueados-->
+                </li>
+                
+              </ul>
             </div>
-        </div>
+          </div>
     </nav>
     <!-- Content section 1-->
     <div class="container" style="display: flex; align-items: center; justify-content: center; margin-bottom: 2%; margin-top: 2%;">

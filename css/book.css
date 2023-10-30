@@ -1,0 +1,39 @@
+.book-modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.book-modal-content {
+    background-color: #4d3b31;
+    margin: auto;
+    padding: 5px;
+    width: 50%;
+}
+
+/* Estilos para el botón de cerrar */
+
+.close {
+    color: #CC6F32;
+    float: right;
+    margin-right: 10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #a75a28;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.shadow-sm img {
+    cursor: pointer;
+}

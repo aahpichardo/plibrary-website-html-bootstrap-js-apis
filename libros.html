@@ -2,79 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Libros</title>
-    <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Libros</title>
+  <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+    rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/book.css">
 </head>
 
 <body id="page-top" style="background-color: #413128; color: aliceblue; text-align: center;" id="Catalogo">
 
-    <!-- Navigation-->
-     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="background-color: #CC6F32;">
-        <div class="container">
-            <a class="navbar-brand" href="#">pLibrary</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
-                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signinModal" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white;">Iniciar Sesión</a> <!--Se agrega desde el data-bs-toggle para agregar el modal-->
-                </li>
-                <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
-                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white" >Registrarme</a>
-                </li>
-                <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
-                  <a class="nav-link" href="#Contacto" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white" >Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link logged-in" href="#" id="logout">Cerrar Sesión</a> <!--Clase loggedin para que salga solo cuando estamos logueados-->
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-    </nav>
-    <!-- Content section 1-->
-    <div class="container" style="display: flex; align-items: center; justify-content: center; margin-bottom: 2%; margin-top: 2%;">
-        <h3 class="text-center">Seleccionar género: </h3>
-        <select id="genre" style="border-radius: 25px; padding: 10px; margin-left: 10px; ">
-            <option id="hardcover-fiction" value="hardcover-fiction">Hardcover Fiction</option>
-            <option id="hardcover-nonfiction" value="hardcover-nonfiction">Hardcover Nonfiction</option>
-            <option id="trade-fiction-paperback" value="trade-fiction-paperback">Paperback Trade Fiction</option>
-            <option id="mass-market-paperback" value="mass-market-paperback">Paperback Mass-Market Fiction</option>
-            <option id="paperback-nonfiction" value="paperback-nonfiction">Paperback Nonfiction</option>
-            <option id="young-adult" value="young-adult">Young Adult</option>
-            <option id="picture-books" value="picture-books">Picture Books</option>
-            <option id="advice-how-to-and-miscellaneous" value="advice-how-to-and-miscellaneous">Advice, How-To, and Miscellaneous</option>
-            <option id="science" value="science">Science</option>
-            <option id="travel" value="travel">Travel</option>
-        </select>
-    </div>
-
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background-color: #CC6F32;">
     <div class="container">
-        <h1 class="text-center" id="genero"></h1>
-        <div id="bookList" class="row mt-4"></div>
+      <a class="navbar-brand" href="#">pLibrary</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signinModal"
+              style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white;">Inicio</a>
+            <!--Se agrega desde el data-bs-toggle para agregar el modal-->
+          </li>
+          <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
+            <a class="nav-link" href="perfil.html" data-bs-toggle="modal" data-bs-target="#signupModal"
+              style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white">Perfil</a>
+          </li>
+          <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
+            <a class="nav-link" href="home.html#Contacto"
+              style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link logged-in" href="#" id="logout">Cerrar Sesión</a>
+            <!--Clase loggedin para que salga solo cuando estamos logueados-->
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!-- Content section 1-->
+  <div class="container"
+    style="display: flex; align-items: center; justify-content: center; margin-bottom: 2%; margin-top: 2%;">
+    <h3 class="text-center">Seleccionar género: </h3>
+    <select id="genre" style="border-radius: 25px; padding: 10px; margin-left: 10px; ">
+      <option id="hardcover-fiction" value="hardcover-fiction">Hardcover Fiction</option>
+      <option id="hardcover-nonfiction" value="hardcover-nonfiction">Hardcover Nonfiction</option>
+      <option id="trade-fiction-paperback" value="trade-fiction-paperback">Paperback Trade Fiction</option>
+      <option id="mass-market-paperback" value="mass-market-paperback">Paperback Mass-Market Fiction</option>
+      <option id="paperback-nonfiction" value="paperback-nonfiction">Paperback Nonfiction</option>
+      <option id="young-adult" value="young-adult">Young Adult</option>
+      <option id="picture-books" value="picture-books">Picture Books</option>
+      <option id="advice-how-to-and-miscellaneous" value="advice-how-to-and-miscellaneous">Advice, How-To, and
+        Miscellaneous</option>
+      <option id="science" value="science">Science</option>
+      <option id="travel" value="travel">Travel</option>
+    </select>
+  </div>
 
-    <footer class="py-5 bg-black">
-        <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; pLibrary realizado por: Angel Hernandez, Brandon Chacon, Gael Flores, Javier Solis, Esau Melendez, Alan Linares</p></div>
-    </footer>
+  <div class="container">
+    <h1 class="text-center" id="genero"></h1>
+    <div id="bookList" class="row mt-4"></div>
+  </div>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="app/scripts.js"></script>
+  <footer class="py-5 bg-black">
+    <div class="container px-5">
+      <p class="m-0 text-center text-white small">Copyright &copy; pLibrary realizado por: Angel Hernandez, Brandon
+        Chacon, Gael Flores, Javier Solis, Esau Melendez, Alan Linares</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="app/scripts.js"></script>
 </body>
 
 </html>

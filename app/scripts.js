@@ -33,18 +33,62 @@ function Show(listName) {
 
                 const col = document.createElement('div');
                 col.className = 'col-md-3';
+
                 const bookDiv = document.createElement('div');
-                bookDiv.className = 'card mb-4 shadow-sm';
+                bookDiv.className = 'mb-4 shadow-sm';
+
+                const textDiv = document.createElement('div');
+                textDiv.className = 'mb-4 text-center';
 
                 bookDiv.innerHTML = `
                     <img src="${book.book_image}" class="card-img-top" alt="${book.title}">
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">${book.title}</h5>
-                        <p class="card-text"><strong>Autore:</strong> ${book.author}</p>
-                    </div>
+                `;
+
+                bookDiv.addEventListener('click', () => {
+
+                    // Función para abrir modal
+                    function openModal() {
+
+                        // Crea y muestra modal
+                        const modal = document.createElement('div');
+                        modal.classList.add('book-modal');
+
+                        modal.innerHTML = `
+                        <div class="book-modal-content">
+                        <span class="close">&times;</span>
+                        <h2>${book.title}</h2>
+                        <img height='410' src="${book.book_image}">  
+                        <p><strong>Autore:</strong> ${book.author}</p>
+                        <p><strong>Editorial:</strong> ${book.publisher}</p>
+                        <p><strong>Descripción:</strong> ${book.description}</p>
+                        </div>
+                        `;
+
+                        document.body.appendChild(modal);
+
+
+                        // Obtén el botón de cerrar
+                        const closeBtn = modal.querySelector('.close');
+
+                        // Agrega un manejador para cerrar el modal
+                        closeBtn.addEventListener('click', () => {
+                            modal.remove();
+                        });
+
+                    }
+
+                    openModal();
+                });
+
+                textDiv.innerHTML = `
+                <div class="card-body">
+                <h5 class="card-title">${book.title}</h5>
+                <p class="card-text"><strong>Autore:</strong> ${book.author}</p>
+                </div>
                 `;
 
                 col.appendChild(bookDiv);
+                col.appendChild(textDiv);
                 row.appendChild(col);
             });
         })
@@ -114,6 +158,6 @@ document.getElementById('travel').addEventListener('click', function (event) {
 });
 
 Show(listName);
- /* termina api nytimes*/
+/* termina api nytimes*/
 
- 
+

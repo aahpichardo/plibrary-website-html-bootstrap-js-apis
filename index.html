@@ -4,10 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
     <title>pLibrary</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    
+    <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -44,7 +43,11 @@
                   <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white" >Registrarme</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link logged-in" href="#" id="logout">Cerrar Sesión</a> <!--Clase loggedin para que salga solo cuando estamos logueados-->
+                  <a class="nav-link logged-in" href="perfil.html" id="perfil" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white" >Perfil</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link logged-in" href="#" id="logout" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white" >Cerrar Sesión</a> <!--Clase loggedin para que salga solo cuando estamos logueados-->
                 </li>
                 
               </ul>
@@ -57,8 +60,8 @@
             <div class="container px-5">
                 <h1 class="masthead-heading mb-0">Bienvenido</h1>
                 <!--<h2 class="masthead-subheading mb-0">Will Rock Your Socks Off</h2>-->
-                <a href="libros.html" class="btn btn-primary btn-xl rounded-pill mt-5" style="">Nuestro cátalogo</a>
-                <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#nosotros" style="">Sobre nosotros</a>
+                <a href="libros.html" class="btn btn-primary btn-xl rounded-pill mt-5" style="">Cátalogo</a>
+                <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#nosotros" style="">Nosotros</a>
                 <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#Contacto" style="">Contacto</a>
             </div>
         </div>
@@ -67,7 +70,7 @@
     <!-- Content section 1-->
     <div class="container">
       <div class="container" id="nosotros">
-        <div class="section3">
+        <div class="section3" style="border-radius: 20px">
         <br>
          <h1 class="title-three">¡La libreria más antigua de Chihuahua!</h1>
          
@@ -100,8 +103,8 @@
 
     
      <!-- Content section 2 Instalaciones --> 
-    <div class="container" id="inst">
-      <div class="section3">
+    <div class="container" id="inst" >
+      <div class="section3" style="border-radius: 20px">
         <br>
         <h1 class="title-three">Instalaciones</h1>
         
@@ -143,14 +146,14 @@
 
     <!-- Content section 3-->
     <div class="container" id="Contacto">
-        <div class="section3">
+        <div class="section3" style="border-radius: 20px">
         <br>
          <h1 class="title-three">¿Tienes alguna duda?</h1>
          <p class="text-three">Para más información, dudas o aclaraciónes puedes acudir a nuestra sucursal directamente, o bien, puedes contactarnos llenando el formulario que se muestra a continuación.</p>
          <div class="row">
             <!-- Lado izquierdo-->
             <div class="col-8">
-              <section id="gtco-who-we-are" class="bg-white">
+              <section id="gtco-who-we-are"  style="border-radius: 20px; height: 399.75px; width: 752.25px;">
                 <div class="container text-center">
                     <div class="section-content">
                       <div class="container">    
@@ -201,32 +204,39 @@
         </div>
     </div>
     </div>
+    
     <!-- Footer-->
     <footer class="py-5 bg-black">
         <div class="container px-5">
-            <p class="m-0 text-center text-white small">Copyright &copy; pLibrary realizado por: Angel Hernandez,
-                Brandon Chacon, Gael Flores, Javier Solis, Esau Melendez, Alan Linares</p>
+            <p class="m-0 text-center text-white small">Copyright &copy; pLibrary realizado por:</p>
+            <p>  
+              <a href="https://github.com/aahpichardo" target="_blank">Angel Hernández</a>,
+              <a href="https://github.com/BrandonChacon01" target="_blank">Brandon Chacón</a>, 
+              <a href="https://github.com/GaelCrack15" target="_blank">Gael Flores</a>, 
+              <a href="https://github.com/JaviierSM" target="_blank">Javier Solís</a>, 
+              <a href="https://github.com/ZazaEsau" target="_blank">Esaú Meléndez</a>, 
+              <a href="https://github.com/alanlinares3004" target="_blank">Alan Linares</a>.</p>
         </div>
     </footer>
 
     <!--MODALES-->
 
     <!-- Login Modal (ventana emergente para que salga el inicio de sesión) -->
-    <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="backdrop-filter: blur(2px);">
         <div class="modal-dialog">
       <div class="modal-content bg-dark">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <div class="modal-header" style="background-color: rgb(204, 111, 50);">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="background-color: rgb(204, 111, 50);">
             <form id="login-form" action="">
-                <label for="email">Email</label>
-                <input type="text" id="login-email" class="form-control mb-3" placeholder="Email" required>
-                <label for="email">Password</label>
+                <label for="email">Correo electrónico</label>
+                <input type="text" id="login-email" class="form-control mb-3" placeholder="ejemplo@correo.com" required>
+                <label for="email">Contraseña</label>
                 <input type="password" id="login-password" class="form-control mb-3" placeholder="**********" required>
-                <button type="submit" class="btn btn-primary">
-                    Login
+                <button type="submit" class="btn btn-lg btn-block text-light" style="margin-top: 20px; background-color: #C89D65;">
+                    Iniciar Sesión
                   </button>
               </form>
         </div>
@@ -235,23 +245,23 @@
   </div>
 
       <!-- Signup Modal (ventana emergente para que salga el registro) -->
-      <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="backdrop-filter: blur(2px);">
         <div class="modal-dialog">
       <div class="modal-content bg-dark">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Signup</h1>
+        <div class="modal-header" style="background-color: rgb(204, 111, 50);">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Registro</h1>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="background-color: rgb(204, 111, 50);">
           <form id="signup-form" action="">
             <!--<label for="name">Nombre</label>
             <input type="text" id="signup-name" class="form-control mb-3" placeholder="Nombre" required>-->
-            <label for="email">Email</label>
-            <input type="text" id="signup-email" class="form-control mb-3" placeholder="Email" required>
-            <label for="email">Password</label>
-            <input type="password" id="signup-password" class="form-control mb-3" placeholder="**********" required>
-            <button type="submit" class="btn btn-primary">
-                Register
+            <label for="email">Correo Electrónico</label>
+            <input type="text" id="signup-email" class="form-control mb-3" placeholder="ejemplo@correo.com" required>
+            <label for="email">Contraseña</label>
+            <input type="password" id="signup-password" class="form-control mb-3" placeholder="Debe contener al menos 6 caracteres." required>
+            <button type="submit" class="btn btn-lg btn-block text-light" style="margin-top: 20px; background-color: #C89D65;">
+                Registrarme
               </button>
           </form>
         </div>

@@ -3,8 +3,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
     <title>Perfil</title>
     <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -347,8 +345,11 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Log In</a></li>
+                  <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
+                    <a class="nav-link" href="index.html" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white;">Volver al inicio</a>
+                    <!--Se agrega desde el data-bs-toggle para agregar el modal-->
+
+                  </li>
                 </ul>
             </div>
         </div>
@@ -380,6 +381,21 @@
         <div class="imagenLibroTres"></div>
         <div class="imagenLibroCuatro"></div>
     </div>
+
+        <!-- Footer
+        <footer class="py-5 bg-black">
+          <div class="container px-5">
+              <p class="m-0 text-center text-white small">Copyright &copy; pLibrary realizado por:</p>
+              <p>  
+                <a href="https://github.com/aahpichardo" target="_blank">Angel Hernández</a>,
+                <a href="https://github.com/BrandonChacon01" target="_blank">Brandon Chacón</a>, 
+                <a href="https://github.com/GaelCrack15" target="_blank">Gael Flores</a>, 
+                <a href="https://github.com/JaviierSM" target="_blank">Javier Solís</a>, 
+                <a href="https://github.com/ZazaEsau" target="_blank">Esaú Meléndez</a>, 
+                <a href="https://github.com/alanlinares3004" target="_blank">Alan Linares</a>.</p>
+          </div>
+      </footer>-->
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
     <title>Perfil</title>
     <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -10,395 +12,92 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Core theme CSS -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-<style>
-.cuadro {
-  position: absolute;
-  width: 828px;
-  height: 600px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 120px;
-
-  background: #CC6F32;
-  border-radius: 40px;
-}
-
-.circulo {
-  position: absolute;
-  width: 337px;
-  height: 337px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 40px;
-  border-radius: 50%; 
-
-  background: #D9D9D9;
-}
-
-.imagenPerfil {
-  position: absolute;
-  width: 297.82px;
-  height: 300px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 60px;
-
-  background: url(assets/img/imagen-perfil.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-}
-
-.busqueda {
-  position: relative;
-  width: 479px;
-  height: 60px;
-  margin: 0 auto;
-  top: 400px;
-  font-family: 'Crimson Pro';
-
-  background: #D9D9D9;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  font-size: 16px;
-  border: none;
-  outline: none;
-  transition: background-color 0.3s;
-}
-
-.busqueda:focus {
-  background: #cc6f32;
-}
-
-.botonBusqueda {
-  position: absolute;
-  width: 226px;
-  height: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 490px;
-  font-family: 'Crimson Pro';
-
-  background: #D9D9D9;
-  border: none; 
-  border-radius: 10px;
-  color: #333; 
-  font-size: 16px; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
-}
-
-.botonBusqueda:hover {
-  background: #cc6f32; 
-  color: #FFF;
-}
-
-.salir {
-  position: absolute;
-  width: 125px;
-  height: 35px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 580px;
-  font-family: 'Crimson Pro';
-
-  background: #D9D9D9;
-  border: none; 
-  border-radius: 10px;
-  color: #333; 
-  font-size: 16px; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
-}
-
-.salir:hover {
-  background: #cc6f32; 
-  color: #FFF;
-}
-
-.imagenCuadro {
-  position: absolute;
-  width: 798px;
-  height: 570px;
-  left: 16px;
-  top: 16px;
-
-  border-radius: 40px;
-}
-
-.cuadroDos {
-  position: absolute;
-  width: 230px;
-  height: 550px;
-  left: 56px;
-  top: 120px;
-
-  background: #CC6F32;
-  border-radius: 40px;
-}
-
-.cuadroTres {
-  position: absolute;
-  width: 230px;
-  height: 550px;
-  left: 1240px;
-  top: 120px;
-
-  background: #CC6F32;
-  border-radius: 40px;
-}
-
-.imagenCuadroDos {
-  position: absolute;
-  width: 210px;
-  height: 530px;
-  left: 10px;
-  top: 10px;
-
-  border-radius: 40px;
-}
-
-.imagenCuadroTres {
-  position: absolute;
-  width: 210px;
-  height: 530px;
-  left: 10px;
-  top: 10px;
-
-  border-radius: 40px;
-}
-
-.tituloCuadroDos {
-  position: absolute;
-  left: 2px;
-  top: 20px;
-
-  font-family: 'Crimson Pro';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-
-  color: #FFFFFF;
-}
-
-.tituloCuadroTres {
-  position: absolute;
-  left: 2px;
-  top: 20px;
-
-  font-family: 'Crimson Pro';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-
-  color: #FFFFFF;
-}
-
-.imagenLibroUno {
-  position: absolute;
-  width: 102px;
-  height: 169px;
-  left: 66px;
-  top: 107px;
-
-  background: url(assets/img/portada-libro1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.imagenLibroDos {
-  position: absolute;
-  width: 102px;
-  height: 169px;
-  left: 66px;
-  top: 320px;
-
-  background: url(assets/img/portada-libro2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.botonConsultar {
-  position: absolute;
-  width: 102px;
-  height: 35px;
-  left: 66px;
-  top: 273px;
-  background: #D9D9D9;
-  border-radius: 0px 0px 10px 10px;
-  border: none;
-  color: #fff;
-  font-size: 14px;
-  cursor: pointer;
-  text-align: center; 
-  line-height: 35px;
-  transition: background-color 0.3s; 
-}
-
-.botonConsultar:hover {
-  background: #BFBFBF;
-  color: #000;
-}
-
-.botonConsultar2 {
-  position: absolute;
-  width: 102px;
-  height: 35px;
-  left: 66px;
-  top: 485px;
-  background: #D9D9D9;
-  border-radius: 0px 0px 10px 10px;
-  border: none;
-  color: #fff;
-  font-size: 14px;
-  cursor: pointer;
-  text-align: center; 
-  line-height: 35px;
-  transition: background-color 0.3s; 
-}
-
-.botonConsultar2:hover {
-  background: #BFBFBF;
-  color: #000;
-}
-
-.imagenLibroTres {
-  position: absolute;
-  width: 102px;
-  height: 169px;
-  left: 66px;
-  top: 107px;
-
-  background: url(assets/img/portada-libro3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.imagenLibroCuatro {
-  position: absolute;
-  width: 102px;
-  height: 169px;
-  left: 66px;
-  top: 320px;
-
-  background: url(assets/img/portada-libro4.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.botonConsultar3 {
-  position: absolute;
-  width: 102px;
-  height: 35px;
-  left: 66px;
-  top: 273px;
-  background: #D9D9D9;
-  border-radius: 0px 0px 10px 10px;
-  border: none;
-  color: #fff;
-  font-size: 14px;
-  cursor: pointer;
-  text-align: center; 
-  line-height: 35px;
-  transition: background-color 0.3s; 
-}
-
-.botonConsultar3:hover {
-  background: #BFBFBF;
-  color: #000;
-}
-
-.botonConsultar4 {
-  position: absolute;
-  width: 102px;
-  height: 35px;
-  left: 66px;
-  top: 485px;
-  background: #D9D9D9;
-  border-radius: 0px 0px 10px 10px;
-  border: none;
-  color: #fff;
-  font-size: 14px;
-  cursor: pointer;
-  text-align: center; 
-  line-height: 35px;
-  transition: background-color 0.3s; 
-}
-
-.botonConsultar4:hover {
-  background: #BFBFBF;
-  color: #000;
-}
-</style>
-<body id="page-top" style="background-color: #413128; color: aliceblue; text-align: center;">
-    <!-- Navigation-->
+<body id="page-top" style="background-color: #413128; color: aliceblue;">
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background-color:#cc6f32;">
-        <div class="container px-5">
+        <div class="container">
             <a class="navbar-brand" href="#page-top">pLibrary</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                  <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
-                    <a class="nav-link" href="index.html" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white;">Volver al inicio</a>
-                    <!--Se agrega desde el data-bs-toggle para agregar el modal-->
-
-                  </li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Log In</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Content section 1-->
-    <div class="cuadro">
-        <img src="assets/img/imagen-libros1.jpg" alt="imagen de fondo" class="imagenCuadro">
-        <div class="circulo"></div>
-        <div class="imagenPerfil"></div>
-        <input type="text" class="busqueda" placeholder="Nombre...">
-        <button class="botonBusqueda">Buscar</button>
-        <button class="salir">Salir</button>
+    <!-- Content section 1 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card rectangular-card-uno">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-card">Libros recomendados.</h5>
+                        <div class="image-container">
+                            <img src="assets/img/portada-libro1.jpg" alt="Imagen 1" class="img-fluid libros-recomendados">
+                        </div>
+                        <button class="btn btn-primary consultar-button">Consultar</button>
+                        <div class="image-container">
+                            <img src="assets/img/portada-libro2.jpg" alt="Imagen 2" class="img-fluid libros-recomendados">
+                        </div>
+                        <button class="btn btn-primary consultar-button">Consultar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-centre">
+                    <div class="card-body text-center">
+                        <div class="top-content">
+                            <img src="assets/img/imagen-perfil.png" alt="Imagen Redonda" class="rounded-image">
+                            <input type="text" placeholder="Nombre" class="input-field busqueda">
+                            <button class="btn btn-primary boton-buscar">Buscar</button>
+                            <button class="btn btn-secondary boton-salir">Salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card rectangular-card-dos">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-card">Comprados recientemente.</h5>
+                        <div class="image-container">
+                            <img src="assets/img/portada-libro3.jpg" alt="Imagen 1" class="img-fluid libros-recomendados">
+                        </div>
+                        <button class="btn btn-primary consultar-button">Consultar</button>
+                        <div class="image-container">
+                            <img src="assets/img/portada-libro4.jpg" alt="Imagen 2" class="img-fluid libros-recomendados">
+                        </div>
+                        <button class="btn btn-primary consultar-button">Consultar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Incluye la biblioteca de Bootstrap (JavaScript) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     
-    <div class="cuadroDos">
-        <img src="assets/img/imagen-libros2.png" alt="imagen de fondo" class="imagenCuadroDos">
-        <p class="tituloCuadroDos">Libros recomendados.</p>
-        <button class="botonConsultar">Consultar</button>
-        <button class="botonConsultar2">Consultar</button>
-        <div class="imagenLibroUno"></div>
-        <div class="imagenLibroDos"></div>
-    </div>
-    
-    <div class="cuadroTres">
-        <img src="assets/img/imagen-libros3.png" alt="imagen de fondo" class="imagenCuadroTres">
-        <p class="tituloCuadroTres">Comprados recientemente.</p>
-        <button class="botonConsultar3">Consultar</button>
-        <button class="botonConsultar4">Consultar</button>
-        <div class="imagenLibroTres"></div>
-        <div class="imagenLibroCuatro"></div>
-    </div>
-
-        <!-- Footer
-        <footer class="py-5 bg-black">
-          <div class="container px-5">
-              <p class="m-0 text-center text-white small">Copyright &copy; pLibrary realizado por:</p>
-              <p>  
+    <footer class="py-5 bg-black text-center">
+        <div class="container px-5">
+            <p class="m-0 text-white small">Copyright &copy; pLibrary realizado por:</p>
+            <p>
                 <a href="https://github.com/aahpichardo" target="_blank">Angel Hernández</a>,
                 <a href="https://github.com/BrandonChacon01" target="_blank">Brandon Chacón</a>, 
                 <a href="https://github.com/GaelCrack15" target="_blank">Gael Flores</a>, 
                 <a href="https://github.com/JaviierSM" target="_blank">Javier Solís</a>, 
                 <a href="https://github.com/ZazaEsau" target="_blank">Esaú Meléndez</a>, 
-                <a href="https://github.com/alanlinares3004" target="_blank">Alan Linares</a>.</p>
-          </div>
-      </footer>-->
-
-    <!-- Bootstrap core JS-->
+                <a href="https://github.com/alanlinares3004" target="_blank">Alan Linares</a>.
+            </p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+    <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
 </body>
 </html>

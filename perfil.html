@@ -22,12 +22,13 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background-color:#cc6f32;">
         <div class="container">
-            <a class="navbar-brand" href="#page-top">pLibrary</a>
+            <a class="navbar-brand">pLibrary</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Log In</a></li>
+                    <li class="nav-item logged-out"> <!--Clase loggedout para saber que debe salir cuando no estemos logeados-->
+                        <a class="nav-link" href="index.html" style="background-color: #C89D65; padding: 5px 10px; border-radius: 5px; margin: 5px; color: white;">Volver al inicio</a>
+                      </li>
                 </ul>
             </div>
         </div>
@@ -54,10 +55,13 @@
                 <div class="card card-centre">
                     <div class="card-body text-center">
                         <div class="top-content">
-                            <img src="assets/img/imagen-perfil.png" alt="Imagen Redonda" class="rounded-image">
-                            <input type="text" placeholder="Nombre" class="input-field busqueda">
+                            <img src="assets/img/imagen-perfil2.png" alt="Imagen Redonda" class="rounded-image">
+                            <div class="text-bg-dark" id="nombrePerfil" style="margin-top: 1em;">
+                                <p>Nombre</p>
+                            </div>
+                            <!--<input type="text" placeholder="Nombre" class="input-field busqueda">
                             <button class="btn btn-primary boton-buscar">Buscar</button>
-                            <button class="btn btn-secondary boton-salir">Salir</button>
+                            <button class="btn btn-secondary boton-salir">Salir</button>-->
                         </div>
                     </div>
                 </div>

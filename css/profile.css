@@ -43,11 +43,10 @@
     
 .rounded-image {
     border-radius: 50%;
-    max-width: 85%;
-    width: 85%;
-    height: auto;
+    max-width: 65%;
+    width: 65%;
+    height: 350px;
     border: 12px solid rgb(134, 125, 117);
-
 }
     
 .busqueda {
@@ -93,8 +92,7 @@
     max-width: 50%;
     margin-top: 15px;
     margin-bottom: 5px;
-    max-height: 50%;
-    height: 50%;
+    height: 160px;
     width: 50%;
     margin-left: 25%;
 }

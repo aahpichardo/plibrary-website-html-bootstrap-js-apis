@@ -1,8 +1,9 @@
 .card {
     color: #ffffff;
-    border: 12px solid rgb(198, 112, 51);
     border-radius: 50px;
+    border: 5px solid rgb(105, 57, 22);
     padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
     
 .titulo-card {
@@ -46,7 +47,8 @@
     max-width: 65%;
     width: 65%;
     height: 350px;
-    border: 12px solid rgb(134, 125, 117);
+    border: 8px solid #7e5234;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
     
 .busqueda {
@@ -95,11 +97,12 @@
     height: 160px;
     width: 50%;
     margin-left: 25%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
     
 .consultar-button {
     width: 50%;
     margin-top: 10px;
     margin-left: 25%;
-    background-color: #9eb7d3;
+    background-color: #cc6f32;
 }

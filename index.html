@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>pLibrary</title>
-    
+    <!-- Para el carrusel -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <!--  -->
     <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -109,37 +111,54 @@
           Contamos con amplios y comodos espacios para poder acompañarte en tu lectura tanto en cuartos aislados con sillones como en nuestros jardines.
         </p>
 
-        <div class="container text-center">
-          
-          <div id="imageCarousel" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                  <!-- Primera imagen -->
-                  <div class="carousel-item active" style="margin-bottom: 50px;">
-                      <img src="./assets/img/instalaciones-1.jfif" alt="Imagen 1" style="max-width: 600px; height: auto; margin: 0 auto; border-radius: 50px;">
-                  </div>
-                  <!-- Segunda imagen -->
-                  <div class="carousel-item" style="margin-bottom: 50px;">
-                      <img src="./assets/img/instalaciones-2.jfif" alt="Imagen 2" style="max-width: 700px; height: auto; margin: 0 auto; border-radius: 50px;"">
-                  </div>
-                  <!-- Tercera imagen -->
-                  <div class="carousel-item" style="margin-bottom: 50px;">
-                      <img src="./assets/img/instalaciones-3.jfif" alt="Imagen 3" style="max-width: 700px; height: auto; margin: 0 auto; border-radius: 50px;"">
-                  </div>
+        <div class="swiper mySwiper contenedor-carrusel container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-txt">
+                <h3 style="color: #fff;">Recepción</h3>
               </div>
-              <!-- Controles de navegación -->
-              <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Anterior</span>
-              </a>
-              <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Siguiente</span>
-              </a>
+              <img src="./assets/img/instalaciones-2.jfif" alt="">
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-txt">
+                <h3 style="color: #fff">Planta Baja</h3>
+              </div>
+              <img src="./assets/img/instalaciones-3.jfif" alt="">
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-txt">
+                <h3 style="color: #fff">Segundo Piso</h3>
+              </div>
+              <img src="./assets/img/instalaciones-1.jfif" alt="">
+            </div>
+            
+            
+            
+            <div class="swiper-slide">
+              <div class="swiper-txt">
+                <h3 style="color: #fff;">Caja</h3>
+              </div>
+              <img src="./assets/img/instalaciones-5.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-txt">
+                <h3 style="color: #fff">Sala</h3>
+              </div>
+              <img src="./assets/img/instalaciones-6.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-txt">
+                <h3 style="color: #fff">Cubículo</h3>
+              </div>
+              <img src="./assets/img/instalaciones-4.jpeg" alt="">
+            </div>
+            
           </div>
+        </div>
       </div>
 
+      
     </div>
-  </div>
 
     <!-- Content section 3-->
     <div class="container">
@@ -275,6 +294,10 @@
     <!--Toastify-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js"></script>-->
+    <!-- Carrusel -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./app/carousel.js"></script>
 </body>
 
 </html>

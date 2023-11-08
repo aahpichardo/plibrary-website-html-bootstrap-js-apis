@@ -11127,3 +11127,13 @@ header.masthead .bg-circle-4 {
   width: 320px;
   }
 }
+
+@media(max-width:450px){
+  .swiper{
+  padding: 0 70px;
+  }
+  
+  .swiper-slide img{
+  width: 250px;
+  }
+}

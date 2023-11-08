@@ -11137,3 +11137,30 @@ header.masthead .bg-circle-4 {
   width: 250px;
   }
 }
+
+.col-lg-4.col-md-12 {
+  padding-left: 5.8em;
+}
+
+.orange-box {
+  background-color: #CC6F32;
+  border: 2px solid #ccc;
+  padding: 5px;
+  height: 20em; 
+  box-sizing: border-box;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 auto 1.5em;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+
+  .orange-box {
+    float: right; 
+    width: 20em;
+    margin-right: 8em;
+    margin-left: 5.8em; 
+  }
+
+}

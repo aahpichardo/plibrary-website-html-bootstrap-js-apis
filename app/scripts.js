@@ -35,7 +35,7 @@ function Show(listName) {
                 col.className = 'col-md-3';
 
                 const bookDiv = document.createElement('div');
-                bookDiv.className = 'mb-4 shadow-sm';
+                bookDiv.className = 'mb-4 shadow-sm book';
 
                 const textDiv = document.createElement('div');
                 textDiv.className = 'mb-4 text-center';
@@ -57,7 +57,7 @@ function Show(listName) {
                         <div class="book-modal-content">
                         <span class="close">&times;</span>
                         <h2>${book.title}</h2>
-                        <img height='410' src="${book.book_image}">  
+                        <img class="img-fluid" src="${book.book_image}">  
                         <p><strong>Autore:</strong> ${book.author}</p>
                         <p><strong>Editorial:</strong> ${book.publisher}</p>
                         <p><strong>Descripción:</strong> ${book.description}</p>

@@ -17,6 +17,8 @@
     width: 50%;
 }
 
+
+
 /* Estilos para el botón de cerrar */
 
 .close {
@@ -36,4 +38,24 @@
 
 .shadow-sm img {
     cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .book-modal-content {
+        width: 90vw;
+    }
+
+    #selectgenre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #genre {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .book {
+        width: 106%;
+    }
 }

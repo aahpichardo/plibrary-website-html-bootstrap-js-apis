@@ -14,15 +14,14 @@
 .card-centre {
     background-image: url(../assets/img/imagen-libros1.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     margin-top: 4.9%;
-    margin-bottom: 4.9%;    
+    margin-bottom: 4.9%;
+    max-height: 87.5%;    
 }
     
 .rectangular-card-uno {
     background-image: url(../assets/img/imagen-libros2.png);
     background-size: cover;
-    background-repeat: no-repeat;
     margin-top: 10%;
     margin-bottom: 10%;
 }
@@ -30,7 +29,6 @@
 .rectangular-card-dos {
     background-image: url(../assets/img/imagen-libros3.png);
     background-size: cover;
-    background-repeat: no-repeat;
     margin-top: 10%;
     margin-bottom: 10%;
 }
@@ -44,9 +42,9 @@
     
 .rounded-image {
     border-radius: 50%;
-    max-width: 65%;
-    width: 65%;
-    height: 350px;
+    max-width: 76%;
+    width: 76%;
+    height: auto;
     border: 8px solid #7e5234;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
@@ -96,13 +94,11 @@
     margin-bottom: 5px;
     height: 160px;
     width: 50%;
-    margin-left: 25%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
     
 .consultar-button {
     width: 50%;
     margin-top: 10px;
-    margin-left: 25%;
     background-color: #cc6f32;
 }

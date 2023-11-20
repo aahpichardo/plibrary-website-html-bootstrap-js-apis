@@ -1,3 +1,5 @@
+import { showMessage } from './showMessage.js'
+
 const btn = document.getElementById('button');
 
 document.getElementById('form')
@@ -11,10 +13,12 @@ document.getElementById('form')
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
-      alert('Mensaje enviado correctamente');
+      btn.value = 'Enviar Mensaje';
+      //alert('Mensaje enviado correctamente');
+      showMessage('Mensaje enviado correctamente', 'success');
     }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+      btn.value = 'Enviar Mensaje';
+      //alert(JSON.stringify(err));
+      showMessage('Error al enviar el mensaje', 'error');
     });
 });

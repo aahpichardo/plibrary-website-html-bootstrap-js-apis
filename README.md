@@ -1,6 +1,6 @@
 <h1 align="center" id="title">pLibrary</h1>
 
-<p align="center" ><img src="https://raw.githubusercontent.com/aahpichardo/pLibrary/main/assets/img/logo-plibrary.jpeg" width="200" alt="project-image"></p>
+<p align="center"> <img src="https://raw.githubusercontent.com/aahpichardo/pLibrary/main/assets/img/logo-plibrary.jpeg" width="200" style="border-radius: 20px;" alt="project-image" /> </p>
 
 <p id="description">pLibrary es un sitio web para una biblioteca ficticia del mismo nombre. Permite a los usuarios ver información sobre la biblioteca registrarse para obtener una cuenta contactar a la biblioteca y ver un catálogo de libros.</p>
 

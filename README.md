@@ -41,4 +41,3 @@
 <p>Brandon Chacon https://github.com/BrandonChacon01</p>
 <p>Javier Solis https://github.com/JaviierSM</p>
 <p>Gael Flores https://github.com/GaelCrack15</p>
-<p>Esau Melendez https://github.com/ZazaEsau</p>
